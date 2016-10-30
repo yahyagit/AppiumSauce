@@ -27,8 +27,8 @@ import static org.hamcrest.junit.MatcherAssert.assertThat;
 
 public class NativeIOSTest {
 
-    private static String SAUCE_USERNAME = System.getenv("SAUCE_USERNAME");
-    private static String SAUCE_KEY = System.getenv("SAUCE_KEY");
+	private static String SAUCE_USERNAME = "yahyacool";
+    private static String SAUCE_KEY = "27fc7db7-b47d-47b3-be82-95d7a8ecd658";
     private static AppiumDriver driver;
     private static WebDriverWait wait;
     private static ScrollingUtil scrollingUtil;
@@ -38,10 +38,10 @@ public class NativeIOSTest {
     public static void classSetUp() throws Exception {
         DesiredCapabilities capabilities = DesiredCapabilities.iphone();
         capabilities.setCapability("build", "Native iOS Test Suite");
-        capabilities.setCapability("name", "iPhone 5s 9.2");
+        capabilities.setCapability("name", "iPhone 6s 9.3");
 
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 5s");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.2");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6s");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.3");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
         capabilities.setCapability(MobileCapabilityType.APP, "sauce-storage:UICatalog.zip");
 //        capabilities.setCapability(MobileCapabilityType.APP, "/Users/szymonk/Desktop/UICatalog.zip");

@@ -30,8 +30,8 @@ import static org.junit.Assert.assertEquals;
 @RunWith(ConcurrentParameterized.class)
 public class ParallelBrowserTest implements SauceOnDemandSessionIdProvider {
 
-    private String SAUCE_USERNAME = System.getenv("SAUCE_USERNAME");
-    private String SAUCE_KEY = System.getenv("SAUCE_KEY");
+	private static String SAUCE_USERNAME = "yahyacool";
+    private static String SAUCE_KEY = "27fc7db7-b47d-47b3-be82-95d7a8ecd658";
     /**
      * Constructs a {@link com.saucelabs.common.SauceOnDemandAuthentication} instance using the supplied user name/access key.  To use the authentication
      * supplied by environment variables or from an external file, use the no-arg {@link com.saucelabs.common.SauceOnDemandAuthentication} constructor.

@@ -14,16 +14,16 @@ import static org.junit.Assert.assertEquals;
 
 public class IOSWebTest {
 
-    private String SAUCE_USERNAME = System.getenv("SAUCE_USERNAME");
-    private String SAUCE_KEY = System.getenv("SAUCE_KEY");
+	private static String SAUCE_USERNAME = "yahyacool";
+    private static String SAUCE_KEY = "27fc7db7-b47d-47b3-be82-95d7a8ecd658";
     private AppiumDriver driver;
 
     @Before
     public void setUp() throws Exception {
 
         DesiredCapabilities capabilities = DesiredCapabilities.iphone();
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"iPhone 6 Plus");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"9.2");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"iPhone 6 Plus Device");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"9.3");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
         capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Safari");
         capabilities.setCapability("deviceOrientation", "portrait");

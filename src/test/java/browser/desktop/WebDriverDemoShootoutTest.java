@@ -19,8 +19,8 @@ import static org.junit.Assert.*;
 
 public class WebDriverDemoShootoutTest {
 
-    private String SAUCE_USERNAME = System.getenv("SAUCE_USERNAME");
-    private String SAUCE_KEY = System.getenv("SAUCE_KEY");
+	private static String SAUCE_USERNAME = "yahyacool";
+    private static String SAUCE_KEY = "27fc7db7-b47d-47b3-be82-95d7a8ecd658";
     private WebDriver driver;
     private WebDriverWait wait;
 

@@ -32,8 +32,8 @@ import static org.hamcrest.junit.MatcherAssert.assertThat;
 @RunWith(ConcurrentParameterized.class)
 public class ParallelNativeIOSTest implements SauceOnDemandSessionIdProvider {
 
-    private String SAUCE_USERNAME = System.getenv("SAUCE_USERNAME");
-    private String SAUCE_KEY = System.getenv("SAUCE_KEY");
+	private String SAUCE_USERNAME = "yahyacool";
+    private String SAUCE_KEY = "27fc7db7-b47d-47b3-be82-95d7a8ecd658";
     public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(SAUCE_USERNAME, SAUCE_KEY);
 
     @Rule
@@ -58,10 +58,17 @@ public class ParallelNativeIOSTest implements SauceOnDemandSessionIdProvider {
 //        devices.add(new String[]{"8.1","iPhone 5s"});
 //        devices.add(new String[]{"8.2","iPhone 5s"});
 //        devices.add(new String[]{"8.3","iPhone 5s"});
-        devices.add(new String[]{"8.4", "iPhone 6"});
-        devices.add(new String[]{"9.0", "iPhone 5s"});
-        devices.add(new String[]{"9.1", "iPhone 6"});
-        devices.add(new String[]{"9.2", "iPhone 6 Plus"});
+        devices.add(new String[]{"7.1", "iPad Retina (64-bit) Simulator"});
+        devices.add(new String[]{"9.0", "iPhone 4s Simulator"});
+        devices.add(new String[]{"9.1", "iPhone 5s Simulator"});
+        devices.add(new String[]{"9.2", "iPhone 6 Simulator"});
+        
+        devices.add(new String[]{"9.3", "iPhone 6s Plus Device"});
+        devices.add(new String[]{"9.3", "iPhone 6s Device"});
+        devices.add(new String[]{"9.3", "iPhone 6 Device"});
+        devices.add(new String[]{"9.3", "iPad Pro Device"});
+        devices.add(new String[]{"9.3", "iPad Mini 4 Device"});
+        
         return devices;
     }
 

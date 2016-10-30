@@ -28,8 +28,8 @@ import static org.hamcrest.junit.MatcherAssert.assertThat;
 @RunWith(ConcurrentParameterized.class)
 public class ParallelNativeAndroidTest implements SauceOnDemandSessionIdProvider {
 
-    private String SAUCE_USERNAME = System.getenv("SAUCE_USERNAME");
-    private String SAUCE_KEY = System.getenv("SAUCE_KEY");
+    private String SAUCE_USERNAME = "yahyacool";
+    private String SAUCE_KEY = "27fc7db7-b47d-47b3-be82-95d7a8ecd658";
     public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(SAUCE_USERNAME, SAUCE_KEY);
 
     @Rule
@@ -50,9 +50,9 @@ public class ParallelNativeAndroidTest implements SauceOnDemandSessionIdProvider
     @ConcurrentParameterized.Parameters
     public static LinkedList devicesStrings() {
         LinkedList devices = new LinkedList();
-        devices.add(new String[]{"4.3","Samsung Galaxy S3 Emulator"});
-        devices.add(new String[]{"4.4","Samsung Galaxy S4 GoogleAPI Emulator"});
-        devices.add(new String[]{"5.0","Android GoogleAPI Emulator"});
+        devices.add(new String[]{"6.0","Samsung Galaxy S7 Device"});
+        devices.add(new String[]{"4.3","Samsung Galaxy S4 Emulator"});
+        devices.add(new String[]{"4.0","Samsung Galaxy Note Emulator"});
         devices.add(new String[]{"5.1","Android Emulator"});
         return devices;
     }
