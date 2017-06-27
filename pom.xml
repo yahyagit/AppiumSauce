@@ -3,51 +3,42 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.simonkaz</groupId>
-	<artifactId>AppiumSauce</artifactId>
+	<groupId>Contact-WebSite-Automation</groupId>
+	<artifactId>Contact-WebSite-Automation</artifactId>
 	<version>1.0-SNAPSHOT</version>
+
 	<dependencies>
+		<!-- http://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.11</version>
+		</dependency>
+		<!-- http://mvnrepository.com/artifact/com.galenframework/galen-java-support -->
+		<dependency>
+			<groupId>com.galenframework</groupId>
+			<artifactId>galen-java-support</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+		<!-- http://mvnrepository.com/artifact/com.saucelabs/sauce_testng -->
+		<dependency>
+			<groupId>com.saucelabs</groupId>
+			<artifactId>sauce_testng</artifactId>
+			<version>2.1.23</version>
+		</dependency>
+		<!-- http://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>LATEST</version>
+			<version>4.12</version>
 		</dependency>
-		<dependency>
-			<groupId>org.hamcrest</groupId>
-			<artifactId>hamcrest-junit</artifactId>
-			<version>2.0.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>LATEST</version>
-		</dependency>
-		<dependency>
-			<groupId>com.saucelabs</groupId>
-			<artifactId>sauce_junit</artifactId>
-			<version>LATEST</version>
-		</dependency>
-		<dependency>
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
-			<version>3.3.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpcore</artifactId>
-			<version>4.3.3</version>
-		</dependency>
-		<dependency>
-			<groupId>joda-time</groupId>
-			<artifactId>joda-time</artifactId>
-			<version>2.9.1</version>
-		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.0</version>
+				<version>3.2</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -56,12 +47,36 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.12.4</version>
+				<version>2.20</version>
 				<configuration>
-					<redirectTestOutputToFile>true</redirectTestOutputToFile>
+					<systemPropertyVariables>
+						<property>
+							<name>SAUCE_USERNAME</name>
+							<value>1000000014</value>
+						</property>
+						<property>
+							<name>SAUCE_ACCESS_KEY</name>
+							<value>31a0f456-bbd5-4691-9a7b-4261caf06b60</value>
+						</property>
+					</systemPropertyVariables>
+					<parallel>methods</parallel>
+					<threadCount>4</threadCount>
+					<properties>
+						<property>
+							<name>dataproviderthreadcount</name>
+							<value>4</value>
+						</property>
+						<property>
+							<name>usedefaultlisteners</name>
+							<value>false</value>
+						</property>
+						<property>
+							<name>listener</name>
+							<value>com.galenframework.testng.GalenTestNgReportsListener</value>
+						</property>
+					</properties>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

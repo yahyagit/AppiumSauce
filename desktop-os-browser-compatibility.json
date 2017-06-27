@@ -1,0 +1,106 @@
+[
+	{
+		"os": "Windows 10",
+		"platform": "WIN10",
+		"browser": "firefox",
+		"browser-version": "54",
+		"long-name": "Mozilla Firefox",
+		"screenResolution": "1920x1080"
+	},
+	{
+		"os": "Windows 10",
+		"platform": "WIN10",
+		"browser": "firefox",
+		"browser-version": "53",
+		"long-name": "Mozilla Firefox",
+		"screenResolution": "1920x1080"
+	},
+	{
+		"os": "Windows 10",
+		"platform": "WIN10",
+		"browser": "chrome",
+		"browser-version": "59",
+		"long-name": "Google chrome",
+		"screenResolution": "1920x1080"
+	},
+	{
+		"os": "Windows 10",
+		"platform": "WIN10",
+		"browser": "chrome",
+		"browser-version": "58",
+		"long-name": "Google chrome",
+		"screenResolution": "1920x1080"
+	},
+	{
+		"os": "Windows 10",
+		"platform": "WIN10",
+		"browser": "microsoftedge",
+		"browser-version": "14",
+		"long-name": "Microsoft Edge",
+		"screenResolution": "1920x1080"
+	},
+	{
+		"os": "Windows 10",
+		"platform": "WIN10",
+		"browser": "microsoftedge",
+		"browser-version": "13",
+		"long-name": "Microsoft Edge",
+		"screenResolution": "1920x1080"
+	},
+	{
+		"os": "Windows 10",
+		"platform": "WIN10",
+		"browser": "Internet Explorer",
+		"browser-version": "11",
+		"long-name": "Microsoft Internet Explorer",
+		"screenResolution": "1920x1080"
+	},
+	{
+		"os": "OS X 10.11",
+		"platform": "OS X 10.11",
+		"browser": "Safari",
+		"browser-version": "10",
+		"long-name": "Mac Safari",
+		"screenResolution": "2048x1536"
+	},
+	{
+		"os": "OS X 10.11",
+		"platform": "OS X 10.11",
+		"browser": "chrome",
+		"browser-version": "59",
+		"long-name": "Google chrome",
+		"screenResolution": "2048x1536"
+	},
+	{
+		"os": "OS X 10.11",
+		"platform": "OS X 10.11",
+		"browser": "firefox",
+		"browser-version": "54",
+		"long-name": "Mozilla Firefox",
+		"screenResolution": "2048x1536"
+	},
+	{
+		"os": "OS X 10.11",
+		"platform": "OS X 10.11",
+		"browser": "Safari",
+		"browser-version": "9",
+		"long-name": "Mac Safari",
+		"screenResolution": "2048x1536"
+	},
+	{
+		"os": "OS X 10.11",
+		"platform": "OS X 10.11",
+		"browser": "chrome",
+		"browser-version": "58",
+		"long-name": "Google chrome",
+		"screenResolution": "2048x1536"
+	},
+	{
+		"os": "OS X 10.11",
+		"platform": "OS X 10.11",
+		"browser": "firefox",
+		"browser-version": "53",
+		"long-name": "Mozilla Firefox",
+		"screenResolution": "2048x1536"
+	}
+]
